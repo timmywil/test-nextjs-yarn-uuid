@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { v4 as uuid } from 'uuid'
 
 export default function Home() {
   return (
@@ -17,8 +18,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Here is a uuid: &ldquo;{uuid()}&rdquo;
         </p>
 
         <div className={styles.grid}>
